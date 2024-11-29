@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body > div {
+            margin-bottom: 20px;
+        }
+
+        .block {
+            background-color: yellow;
+        }
+
+        .slider img {
+            width: 200px;
+            height: 100px;
+            object-fit: cover;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="counter">0</div>
+        <button class="increment">Увеличить</button>
+    </div>
+    <div>
+        <button class="changeColor">Изменить цвет фона</button>
+    </div>
+    <div>
+        <input type="text" class="text">
+        <p class="p"></p>
+    </div>
+    <div class="practice4">
+        <label>
+            <input type="checkbox"> Показать текст
+        </label>
+        <p style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, facere obcaecati minima ab cumque dolorem. Adipisci pariatur amet esse quas quae fuga tempora reprehenderit vel, officiis, sunt totam ducimus?</p>
+    </div>
+    <div class="practice5">
+        <textarea></textarea>
+        <span>0</span>
+    </div>
+    <div>
+        <div style="width: 100px; height: 100px;">
+            <div class="block"
+                style="width: 10px; height: 10px;"
+            ></div>
+        </div>
+        <label>
+            Ширина: 
+            <input type="range" min="10" max="100" value="10" name="width">
+        </label>
+        <label>
+            Высота:
+            <input type="range" min="10" max="100" value="10" name="height">
+        </label>
+    </div>
+    <div>
+        <input type="number" name="number1">
+        <input type="number" name="number2">
+        <button class="plus">+</button>
+        <button class="minus">-</button>
+        <button class="multy">*</button>
+        <button class="dev">/</button>
+        <input type="number" readonly name="result">
+    </div>
+    <div>
+        <button class="prev">Назад</button>
+        <div class="slider">
+            <img src="https://i.ytimg.com/vi/ODWwI5orJGA/mqdefault.jpg" alt="" style="display: block;">
+            <img src="https://csment.ru/wp-content/uploads/2023/11/s1200-3-300x200.jpg" alt="">
+            <img src="https://i.ytimg.com/vi/dvJxn-M_COk/sddefault.jpg" alt="">
+            <img src="https://17.img.avito.st/image/1/SAFkp7aB5OgSAhbueN4yJIcE4O7GBOTuoWfg7hICFu7SAOjs0gbkrA" alt="">
+        </div>
+        <button class="next">Вперед</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
